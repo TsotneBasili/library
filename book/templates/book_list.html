@@ -1,0 +1,10 @@
+
+{% if data %}
+    {% for book in data %}
+    <h1>Name: {{ book.name }}, Author: {{ book.author }}, Language: {{ book.language }}, Price: {{ book.price }}</h1>
+    {% endfor %}
+{% else %}
+    <p> Books were not found </p>
+{% endif %}
+
+
